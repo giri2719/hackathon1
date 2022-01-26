@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hackathon</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="display-2 text-center">Nationalize API</h1>
+    <section class="text-left">
+        <input
+          type="search"
+          class="add-user-name"
+          placeholder="Enter name here"
+        ></input>
+        <input type="submit" value="search" onClick="getUser()" class="btn-outline-info" ></input>
+    </section>
+    <br />
+    <marquee scrollamount="10"><h1 class="text-danger">First Two Country Name and its probability value</h1></marquee>
+    <br>
+    <br>
+    <section class="container1">
+      <table class="table table-striped table-hover table-bordered">
+        <tr class="bg-secondary">
+          <th><h4>1<sup>st</sup> country</h4></th>
+          <th><h4>1<sup>st</sup> country probability Value</h4></th>
+          <th><h4>2<sup>nd</sup> Country</h4></th>
+          <th><h4>2<sup>nd</sup> country probability Value</h4></th>
+        </tr>
+        <tr class="bg-white">
+          <td id="country1" class="text-danger"></td>
+          <td id="pro1" class="text-success"></td>
+          <td id="country2" class="text-danger"></td>
+          <td id="pro2" class="text-success"></td>
+        </tr>
+      </table>
+    </section>
+  </body>
+  <script src="script.js"></script>
+</html>
